@@ -16,7 +16,8 @@ using System.Windows.Forms;
 /// Description: Splash Screen for the Dollar Computers windows form app
 /// </summary>
 
-namespace COMP123Assignment5
+namespace COMP123Assignment5.Views
+
 {
     public partial class SplashScreenForm : Form
     {

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using COMP123Assignment5.Data;
+using COMP123Assignment5.Views;
 
 
 /// <summary>
@@ -16,16 +18,36 @@ using System.Windows.Forms;
 
 namespace COMP123Assignment5
 {
-    static class Program
+    public static class Program
     {
+        public static Product product;
+
+        public static SplashScreenForm splashScreenForm;
+        public static StartForm startForm;
+        public static SelectForm selectForm;
+        public static OrderForm orderForm;
+        public static ProductInfoForm productInfoForm;
+        public static DollarComputersAboutBox dollarComputersAboutBox;
+        
+        
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        public static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            splashScreenForm = new SplashScreenForm();
+            startForm = new StartForm();
+            selectForm = new SelectForm();
+            productInfoForm = new ProductInfoForm();
+            orderForm = new OrderForm();
+            dollarComputersAboutBox = new DollarComputersAboutBox();
+
+            product = new Product();
+
             Application.Run(new SplashScreenForm());
         }
     }

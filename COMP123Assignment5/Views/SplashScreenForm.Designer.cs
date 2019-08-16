@@ -1,6 +1,6 @@
-﻿namespace COMP123Assignment5
+﻿namespace COMP123Assignment5.Views
 {
-    partial class SelectForm
+    partial class SplashScreenForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,34 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.components = new System.ComponentModel.Container();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(7, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(512, 39);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Select The Hardware You Want: ";
-            // 
-            // SelectForm
+            // SplashScreenForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
-            this.Name = "SelectForm";
-            this.Text = "SelectForm";
+            this.BackgroundImage = global::COMP123Assignment5.Properties.Resources.DollarComputers;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(600, 400);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "SplashScreenForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "SplashScreenForm";
+            this.Shown += new System.EventHandler(this.SplashScreenForm_Shown);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.BindingSource bindingSource1;
     }
 }

@@ -1,4 +1,5 @@
-﻿namespace COMP123Assignment5
+﻿namespace COMP123Assignment5.Views
+
 {
     partial class StartForm
     {
@@ -97,7 +98,7 @@
             this.StartFormExitButton.TabIndex = 3;
             this.StartFormExitButton.Text = "Exit";
             this.StartFormExitButton.UseVisualStyleBackColor = true;
-            this.StartFormExitButton.Click += new System.EventHandler(this.StartFormExitButton_Click);
+            this.StartFormExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // StartForm
             // 

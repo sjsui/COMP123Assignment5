@@ -15,7 +15,7 @@ using System.Windows.Forms;
 /// Description: Product Info Form of the Dollar Computers windows form app
 /// </summary>
 
-namespace COMP123Assignment5
+namespace COMP123Assignment5.Views
 {
     public partial class ProductInfoForm : Form
     {
@@ -51,6 +51,11 @@ namespace COMP123Assignment5
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void ProductInfoForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }

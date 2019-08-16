@@ -16,7 +16,8 @@ using System.Windows.Forms;
 /// Description: Start Form of the Dollar Computers windows form app
 /// </summary>
 
-namespace COMP123Assignment5
+namespace COMP123Assignment5.Views
+
 {
     public partial class StartForm : Form
     {
@@ -31,16 +32,7 @@ namespace COMP123Assignment5
             Application.Exit();
         }
 
-        /// <summary>
-        /// This is the event handler for the StartForm Exit Button click event
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void StartFormExitButton_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
+       
         /// <summary>
         /// This is the event handler for the StartForm StartNewOrderButton click event
         /// </summary>
@@ -63,6 +55,19 @@ namespace COMP123Assignment5
             this.Hide();
             ProductInfoForm productInfoForm = new ProductInfoForm();
             productInfoForm.Show();
+        }
+
+        
+        
+
+        /// <summary>
+        /// This is the shared event handler for all exit/cancel button clicks. 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
