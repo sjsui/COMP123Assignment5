@@ -6,6 +6,12 @@ namespace COMP123Assignment5.Data
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
+
+    public enum ProductField
+    {
+
+    }
+
     public partial class Product
     {
         public short productID { get; set; }
