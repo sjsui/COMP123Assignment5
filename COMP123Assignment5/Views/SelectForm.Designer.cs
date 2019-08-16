@@ -31,11 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.ProductsDataGridView = new System.Windows.Forms.DataGridView();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.SelectFormNextButton = new System.Windows.Forms.Button();
-            this.SelectFormCancelButton = new System.Windows.Forms.Button();
-            this.SelectedHardwareLabel = new System.Windows.Forms.Label();
-            this.SelectionTextBox = new System.Windows.Forms.TextBox();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,9 +63,14 @@
             this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.SelectFormNextButton = new System.Windows.Forms.Button();
+            this.SelectFormCancelButton = new System.Windows.Forms.Button();
+            this.SelectedHardwareLabel = new System.Windows.Forms.Label();
+            this.SelectionTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.ProductsDataGridView)).BeginInit();
-            this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -136,73 +136,6 @@
             this.ProductsDataGridView.TabIndex = 1;
             this.ProductsDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ProductsDataGridView_CellClick);
             this.ProductsDataGridView.SelectionChanged += new System.EventHandler(this.ProductsDataGridView_SelectionChanged);
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Controls.Add(this.SelectFormNextButton, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.SelectFormCancelButton, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.SelectedHardwareLabel, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.SelectionTextBox, 0, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(11, 334);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(776, 115);
-            this.tableLayoutPanel1.TabIndex = 2;
-            // 
-            // SelectFormNextButton
-            // 
-            this.SelectFormNextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.SelectFormNextButton.Location = new System.Drawing.Point(391, 60);
-            this.SelectFormNextButton.Name = "SelectFormNextButton";
-            this.SelectFormNextButton.Size = new System.Drawing.Size(188, 52);
-            this.SelectFormNextButton.TabIndex = 0;
-            this.SelectFormNextButton.Text = "Next";
-            this.SelectFormNextButton.UseVisualStyleBackColor = true;
-            this.SelectFormNextButton.Click += new System.EventHandler(this.SelectFormNextButton_Click);
-            // 
-            // SelectFormCancelButton
-            // 
-            this.SelectFormCancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.SelectFormCancelButton.Location = new System.Drawing.Point(585, 60);
-            this.SelectFormCancelButton.Name = "SelectFormCancelButton";
-            this.SelectFormCancelButton.Size = new System.Drawing.Size(188, 52);
-            this.SelectFormCancelButton.TabIndex = 0;
-            this.SelectFormCancelButton.Text = "Cancel";
-            this.SelectFormCancelButton.UseVisualStyleBackColor = true;
-            this.SelectFormCancelButton.Click += new System.EventHandler(this.SelectFormCancelButton_Click);
-            // 
-            // SelectedHardwareLabel
-            // 
-            this.SelectedHardwareLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.SelectedHardwareLabel.AutoSize = true;
-            this.SelectedHardwareLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.SelectedHardwareLabel.Location = new System.Drawing.Point(3, 0);
-            this.SelectedHardwareLabel.Name = "SelectedHardwareLabel";
-            this.SelectedHardwareLabel.Size = new System.Drawing.Size(382, 57);
-            this.SelectedHardwareLabel.TabIndex = 1;
-            this.SelectedHardwareLabel.Text = "You have selected: ";
-            this.SelectedHardwareLabel.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // SelectionTextBox
-            // 
-            this.SelectionTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.SelectionTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.SelectionTextBox.Location = new System.Drawing.Point(3, 60);
-            this.SelectionTextBox.Name = "SelectionTextBox";
-            this.SelectionTextBox.ReadOnly = true;
-            this.SelectionTextBox.Size = new System.Drawing.Size(382, 34);
-            this.SelectionTextBox.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -483,6 +416,73 @@
             // 
             this.productBindingSource.DataSource = typeof(COMP123Assignment5.Data.Product);
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.Controls.Add(this.SelectFormNextButton, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.SelectFormCancelButton, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.SelectedHardwareLabel, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.SelectionTextBox, 0, 1);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(11, 334);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(776, 115);
+            this.tableLayoutPanel1.TabIndex = 2;
+            // 
+            // SelectFormNextButton
+            // 
+            this.SelectFormNextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.SelectFormNextButton.Location = new System.Drawing.Point(391, 60);
+            this.SelectFormNextButton.Name = "SelectFormNextButton";
+            this.SelectFormNextButton.Size = new System.Drawing.Size(188, 52);
+            this.SelectFormNextButton.TabIndex = 0;
+            this.SelectFormNextButton.Text = "Next";
+            this.SelectFormNextButton.UseVisualStyleBackColor = true;
+            this.SelectFormNextButton.Click += new System.EventHandler(this.SelectFormNextButton_Click);
+            // 
+            // SelectFormCancelButton
+            // 
+            this.SelectFormCancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.SelectFormCancelButton.Location = new System.Drawing.Point(585, 60);
+            this.SelectFormCancelButton.Name = "SelectFormCancelButton";
+            this.SelectFormCancelButton.Size = new System.Drawing.Size(188, 52);
+            this.SelectFormCancelButton.TabIndex = 0;
+            this.SelectFormCancelButton.Text = "Cancel";
+            this.SelectFormCancelButton.UseVisualStyleBackColor = true;
+            this.SelectFormCancelButton.Click += new System.EventHandler(this.SelectFormCancelButton_Click);
+            // 
+            // SelectedHardwareLabel
+            // 
+            this.SelectedHardwareLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SelectedHardwareLabel.AutoSize = true;
+            this.SelectedHardwareLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.SelectedHardwareLabel.Location = new System.Drawing.Point(3, 0);
+            this.SelectedHardwareLabel.Name = "SelectedHardwareLabel";
+            this.SelectedHardwareLabel.Size = new System.Drawing.Size(382, 57);
+            this.SelectedHardwareLabel.TabIndex = 1;
+            this.SelectedHardwareLabel.Text = "You have selected: ";
+            this.SelectedHardwareLabel.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // SelectionTextBox
+            // 
+            this.SelectionTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SelectionTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.SelectionTextBox.Location = new System.Drawing.Point(3, 60);
+            this.SelectionTextBox.Name = "SelectionTextBox";
+            this.SelectionTextBox.ReadOnly = true;
+            this.SelectionTextBox.Size = new System.Drawing.Size(382, 34);
+            this.SelectionTextBox.TabIndex = 2;
+            // 
             // SelectForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -498,9 +498,9 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SelectForm_FormClosed);
             this.Load += new System.EventHandler(this.SelectForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ProductsDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

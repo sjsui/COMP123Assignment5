@@ -7,6 +7,13 @@ using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/// <summary>
+/// Student Name: Shijun Sui
+/// Student ID: 301027587
+/// Date Created: Aug. 15, 2019
+/// Description: About Box Form of the Dollar Computers windows form app
+/// </summary>
+
 namespace COMP123Assignment5.Views
 {
     public partial class DollarComputersAboutBox : Form

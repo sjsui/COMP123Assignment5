@@ -146,6 +146,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DollarComputersIcon.ico" />
+    <None Include="Resources\computerpicture.jpg" />
     <None Include="Resources\DollarComputers.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
