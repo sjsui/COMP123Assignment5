@@ -109,6 +109,11 @@ namespace COMP123Assignment5.Views
             Program.product.CPU_type = (cells[11].Value.ToString());
             Program.product.CPU_speed = (cells[12].Value.ToString());
             Program.product.webcam = (cells[30].Value.ToString());
+
+
+            ///enable next button
+            SelectFormNextButton.Enabled = true;
+            
         }
 
         /// <summary>

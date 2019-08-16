@@ -55,6 +55,7 @@ namespace COMP123Assignment5.Views
             this.Hide();
             ProductInfoForm productInfoForm = new ProductInfoForm();
             productInfoForm.Show();
+            
         }
 
         

@@ -79,22 +79,35 @@ namespace COMP123Assignment5.Views
         /// <param name="e"></param>
         private void ProductInfoForm_Load(object sender, EventArgs e)
         {
-            ProductInfoProductIDTextbox.Text = Convert.ToString(Program.product.productID);
-            ProductInfoConditionTextbox.Text = Program.product.condition;
-            ProductInfoCostTextbox.Text = Convert.ToString(Program.product.cost);
-            ProductInfoPlatformTextbox.Text = Program.product.platform;
-            ProductInfoOSTextbox.Text = Program.product.OS;
-            ProductInfoManufacturerTextbox.Text = Program.product.manufacturer;
-            ProductInfoModelTextbox.Text = Program.product.model;
-            ProductInfoMemoryTextbox.Text = Program.product.RAM_size;
-            ProductInfoLCDSizeTextbox.Text = Program.product.screensize;
-            ProductInfoHDDTextbox.Text = Program.product.HDD_size;
-            ProductInfoCPUBrandTextbox.Text = Program.product.CPU_brand;
-            ProductInfoCPUNumberTextbox.Text = Program.product.CPU_number;
-            ProductInfoGPUTypeTextbox.Text = Program.product.GPU_Type;
-            ProductInfoCPUTypeTextbox.Text = Program.product.CPU_type;
-            ProductInfoCPUSpeedTextbox.Text = Program.product.CPU_speed;
-            ProductInfoWebCamTextbox.Text = Program.product.webcam;
+            if(Program.product.productID == 0)
+            {
+                OpenFileDialog openFileDialog = new OpenFileDialog();
+                openFileDialog.ShowDialog();
+                this.Show();
+
+                       }
+            else
+            {
+                ProductInfoProductIDTextbox.Text = Convert.ToString(Program.product.productID);
+                ProductInfoConditionTextbox.Text = Program.product.condition;
+                ProductInfoCostTextbox.Text = Convert.ToString(Program.product.cost);
+                ProductInfoPlatformTextbox.Text = Program.product.platform;
+                ProductInfoOSTextbox.Text = Program.product.OS;
+                ProductInfoManufacturerTextbox.Text = Program.product.manufacturer;
+                ProductInfoModelTextbox.Text = Program.product.model;
+                ProductInfoMemoryTextbox.Text = Program.product.RAM_size;
+                ProductInfoLCDSizeTextbox.Text = Program.product.screensize;
+                ProductInfoHDDTextbox.Text = Program.product.HDD_size;
+                ProductInfoCPUBrandTextbox.Text = Program.product.CPU_brand;
+                ProductInfoCPUNumberTextbox.Text = Program.product.CPU_number;
+                ProductInfoGPUTypeTextbox.Text = Program.product.GPU_Type;
+                ProductInfoCPUTypeTextbox.Text = Program.product.CPU_type;
+                ProductInfoCPUSpeedTextbox.Text = Program.product.CPU_speed;
+                ProductInfoWebCamTextbox.Text = Program.product.webcam;
+
+                ProductInfoNextButton.Enabled = true;
+            }
+            
 
             
         }

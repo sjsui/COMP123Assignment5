@@ -237,6 +237,7 @@
             // 
             // ProductInfoNextButton
             // 
+            this.ProductInfoNextButton.Enabled = false;
             this.ProductInfoNextButton.Location = new System.Drawing.Point(651, 207);
             this.ProductInfoNextButton.Name = "ProductInfoNextButton";
             this.ProductInfoNextButton.Size = new System.Drawing.Size(104, 41);
